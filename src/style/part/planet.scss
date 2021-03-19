@@ -1,0 +1,29 @@
+.b-planet {
+    margin-bottom: 10rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    .planet__content {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .planet__title {
+        margin: 0 auto 3rem;
+        max-width: 500px;
+        font-weight: bold;
+        line-height: 1.1;
+        font-size: 4.8rem;
+    }
+    .planet__video {
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1440px;
+            max-width: 115%;
+            z-index: -2;
+        }
+    }
+}

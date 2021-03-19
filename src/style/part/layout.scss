@@ -1,0 +1,73 @@
+.l-wrap {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    background: url("../img/bg_stars.png") 50% 50% repeat-y $color-darkblue;
+}
+/*----------*/
+.l-header {
+    position: relative;
+
+    @media (min-width: $breakpoint-tablet) {
+    }
+    @media (min-width: $breakpoint-desktop) {
+    }
+
+    h1, h2, h3, h4 {
+        color: $color-white;
+    }
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.5rem;
+        max-width: 1280px;
+    }
+
+    &--main {
+        padding-bottom: 10rem;
+        background-size: auto, cover;
+
+        @media (min-width: $breakpoint-tablet) {
+            padding-bottom: 20rem;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            padding-bottom: 13rem;
+        }
+    }
+    
+    & + .l-carousel {
+        margin-top: -7.5rem;
+
+        @media (min-width: $breakpoint-tablet) {
+            margin-top: -14rem;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            margin-top: -6.5rem;
+        }
+    }
+}
+/*----------*/
+.l-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex: 1 auto;
+
+    @media (min-width: $breakpoint-tablet) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
+    }
+
+    .content__wrap {
+        margin: auto;
+        max-width: 1280px;
+        width: 100%;
+    }
+}
+/*----------*/
+.l-footer {}
+/*----------*/
