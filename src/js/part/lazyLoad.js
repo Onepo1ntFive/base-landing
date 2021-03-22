@@ -10,7 +10,6 @@
             let picSource = pic.querySelectorAll('source');
 
             Array.prototype.forEach.call(picSource, function (source, i) {
-                console.log(source.dataset.srcset)
                 source.setAttribute("srcset", source.dataset.srcset);
             });
         });
