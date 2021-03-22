@@ -1,10 +1,12 @@
 .b-video-desc {
+    overflow: hidden;
     margin: 0 auto 8rem;
     max-width: 900px;
     text-align: center;
 }
 /*---------*/
 .b-video {
+    overflow: hidden;
     margin-bottom: 10rem;
 
     @media (min-width: $breakpoint-desktop) {

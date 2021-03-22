@@ -7,9 +7,19 @@
     color: $color-gray;
 
     h2 {
+        overflow: hidden;
         margin-bottom: 0.3em;
     }
 
+    .contacts__text {
+        p {
+            overflow: hidden;
+        }
+        span {
+            display: inline-block;
+            position: relative;
+        }
+    }
     .contacts__pic {
         margin-bottom: 2rem;
         display: block;

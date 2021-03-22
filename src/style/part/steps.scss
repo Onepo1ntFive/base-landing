@@ -7,7 +7,7 @@
         margin-bottom: 20rem;
     }
 
-    &::before {
+    .steps__decor {
         content: '';
         display: block;
         padding-top: 250%;
@@ -60,6 +60,7 @@
     }
     .steps__top-title {
         margin-bottom: 3rem;
+        overflow: hidden;
         width: 100%;
 
         @media (min-width: $breakpoint-tablet) {}
@@ -70,6 +71,7 @@
     }
     .steps__top-text {
         width: 100%;
+        overflow: hidden;
         font-size: 1.6rem;
 
         @media (min-width: $breakpoint-tablet) {}
