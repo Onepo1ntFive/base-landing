@@ -5,7 +5,11 @@
 }
 /*---------*/
 .b-video {
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
+
+    @media (min-width: $breakpoint-desktop) {
+        margin-bottom: 20rem;
+    }
     
     a {
         display: block;

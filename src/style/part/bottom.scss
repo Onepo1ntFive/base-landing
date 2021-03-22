@@ -7,10 +7,34 @@
     align-items: flex-end;
     background-color: #232537;
 
+    .bottom__content {
+        margin-bottom: 3rem;
+        @media (min-width: $breakpoint-tablet) {}
+        @media (min-width: $breakpoint-desktop) {
+            margin-bottom: 0;
+        }
+    }
+
     .bottom__btns {
+        @media (min-width: $breakpoint-tablet) {
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+        
         a {
-            margin-left: 1rem;
-            margin-right: 1rem;
+            margin-top: 1rem;
+            width: 100%;
+            text-align: center;
+
+            @media (min-width: $breakpoint-tablet) {
+                margin-top: 0;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                width: auto;
+            }
+            @media (min-width: $breakpoint-desktop) {
+
+            }
         }
     }
 }

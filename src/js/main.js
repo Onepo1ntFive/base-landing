@@ -11,7 +11,7 @@
             let menuTarget = el.getAttribute('href');
             let menuTargetBlock = document.querySelector(menuTarget);
 
-            scrollIt(menuTargetBlock, 2000);
+            scrollIt(menuTargetBlock, 1000);
         });
     });
 

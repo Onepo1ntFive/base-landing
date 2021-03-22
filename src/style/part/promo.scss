@@ -8,6 +8,11 @@
 
     .promo__content {
         max-width: 600px;
+        font-size: 1.6rem;
+        
+        @media (min-width: $breakpoint-tablet) {
+            font-size: inherit;
+        }
 
         p {
             max-width: 500px;
@@ -24,7 +29,14 @@
             display: block;
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 4.8rem;
+            font-size: 2.5rem;
+
+            @media (min-width: $breakpoint-tablet) {
+                font-size: 3.5rem;
+            }
+            @media (min-width: $breakpoint-desktop) {
+                font-size: 4.8rem;
+            }
         }
     }
     .promo__btn {
@@ -38,7 +50,14 @@
             transform: translate(-63%, -50%);
             z-index: -1;
             width: 2000px;
-            max-width: 155%;
+            max-width: 350%;
+
+            @media (min-width: $breakpoint-tablet) {
+                max-width: 250%;
+            }
+            @media (min-width: $breakpoint-desktop) {
+                max-width: 155%;
+            }
         }
     }
 }

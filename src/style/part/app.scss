@@ -24,9 +24,13 @@ body {
     font-family: $font-family;
     line-height: 1.5;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: $color-white;
     -webkit-backface-visibility: hidden;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 2rem;
+    }
 }
 sup {
     vertical-align: super;
@@ -49,10 +53,13 @@ h2, .h2 {
     font-family: $font-family;
     line-height: 1;
     font-weight: bold;
-    font-size: 4.8rem;
+    font-size: 3rem;
     color: $color-white;
 
     @media (min-width: $breakpoint-tablet) {
+        font-size: 3.5rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
         font-size: 4.8rem;
     }
 }

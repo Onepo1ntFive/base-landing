@@ -1,5 +1,7 @@
 .b-contacts {
     margin-bottom: 10rem;
+    position: relative;
+    z-index: 1;
     text-align: center;
     font-size: 1.8rem;
     color: $color-gray;
@@ -53,11 +55,24 @@
         padding-top: 5rem;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: center;
+
+        @media (min-width: $breakpoint-tablet) {
+            justify-content: space-between;
+        }
     }
     .contacts__item {
-        width: 25%;
+        margin-bottom: 4rem;
+        width: 100%;
         max-width: 26rem;
+
+        @media (min-width: $breakpoint-tablet) {
+            width: 50%;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            margin-bottom: 0;
+            width: 25%;
+        }
 
         &:hover {
             .contacts__pic {
