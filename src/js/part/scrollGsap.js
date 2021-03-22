@@ -5,8 +5,8 @@
     // tl_gsap_video
     let tl_gsap_video = gsap.timeline({
         scrollTrigger: {
-            trigger: document.querySelector('.js-video'),
-            start: "-50% center",
+            trigger: document.querySelector('.js-video-desc'),
+            start: "-25% center",
             end: "bottom center",
             scrub: false,
             markers: false,
