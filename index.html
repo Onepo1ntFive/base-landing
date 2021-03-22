@@ -7,6 +7,8 @@
     <meta name="theme-color" content="#19192a">
     <title>Base</title>
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="preload" href="./img/lazy-1232-604.png" as="image">
 </head>
 
 <body>
@@ -39,32 +41,38 @@
                         <div class="promo__content">
                             <div class="promo__title">
                                 <h1>Стань частью глобального laser tag сообщества</h1>
-                                <span>Стань частью</span> <span>глобального laser tag</span> <span>сообщества</span>
+                                <span><em>Стань частью</em></span>
+                                <span><em>глобального laser tag</em></span>
+                                <span><em>сообщества</em></span>
                             </div>
-                            <p>Base -это групнейший сервис по сбору статистики лазертаг игр в мире, позволяющий пользователям легко и быстро погрузиться в интереснейший мир лазертага и быть в курсе всех последних событий </p>
-                            <div class="promo__btn">
-                                <a class="b-button b-button--gradient" href="#">Зарегистрировать клуб</a>
+                            <div class="promo__content-inner">
+                                <p>Base -это групнейший сервис по сбору статистики лазертаг игр в мире, позволяющий пользователям легко и быстро погрузиться в интереснейший мир лазертага и быть в курсе всех последних событий </p>
+                                <div class="promo__btn">
+                                    <a class="b-button b-button--gradient" href="#">Зарегистрировать клуб</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <secrion id="about">
-                    <div class="b-video-desc">
-                        <p>Block “why you need to register in the system” - to encourage players to compete with each other and thereby increase club attendance. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+                    <div class="b-video-desc js-video-desc">
+                        <div class="video-desc__inner">
+                            <p>Block “why you need to register in the system” - to encourage players to compete with each other and thereby increase club attendance. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+                        </div>
                     </div>
-                    <div class="b-video">
+                    <div class="b-video js-video">
                         <a data-fslightbox="video" href="https://www.youtube.com/watch?v=_alfK7ltHWo">
                             <pictire>
-                                <source srcset="./img/video-pic.webp" type="image/webp">
-                                <source srcset="./img/video-pic.jpg" type="image/jpeg">
-                                <img src="./img/video-pic.jpg" alt="video pic">
+                                <source srcset="./img/lazy-1232-604.png" data-srcset="./img/video-pic.webp" type="image/webp">
+                                <source srcset="./img/lazy-1232-604.png" data-srcset="./img/video-pic.jpg" type="image/jpeg">
+                                <img class="lazy" src="./img/lazy-1232-604.png" data-src="./img/video-pic.jpg" alt="video pic">
                             </pictire>
-                            <img class="video__play" src="./img/video-play.svg" alt="play video">
+                            <img class="video__play lazy" src="" data-src="./img/video-play.svg" alt="play video">
                         </a>
                     </div>
                 </secrion>
                 <section id="howitworks">
-                    <div class="b-steps">
+                    <div class="b-steps js-steps">
                         <div class="steps__top">
                             <div class="steps__top-title">
                                 <h2><span>Only 3 steps to use</span> <span>Base for your bissiness</span></h2>
@@ -91,20 +99,23 @@
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
                         </div>
+                        <div class="steps__decor"></div>
                     </div>
                 </section>
                 <section id="laserwar">
-                    <div class="b-pc">
+                    <div class="b-pc js-pc">
                         <pictire>
-                            <source srcset="./img/macbook-app.webp" type="image/webp">
-                            <source srcset="./img/macbook-app.png" type="image/png">
-                            <img src="./img/macbook-app.png" alt="">
+                            <source srcset="./img/lazy-1018-650.pn" data-srcset="./img/macbook-app.webp" type="image/webp">
+                            <source srcset="./img/lazy-1018-650.pn" data-srcset="./img/macbook-app.png" type="image/png">
+                            <img class="lazy" src="./img/lazy-1018-650.png" data-src="./img/macbook-app.png" alt="">
                         </pictire>
                     </div>
                 </section>
                 <section id="plans">
-                    <div class="b-plans">
-                        <h2>Future plans</h2>
+                    <div class="b-plans js-plans">
+                        <div class="plans__title">
+                            <h2>Future plans</h2>
+                        </div>
                         <div class="plans__items">
                             <div class="plans__item plans__item--left">
                                 <div class="plans__num">01</div>
@@ -116,12 +127,12 @@
                                     </div>
                                 </div>
                                 <div class="plans__decoration">
-                                    <img src="./img/plans-decoration.png" class="plans__decoration-dot" alt="">
-                                    <img src="./img/plans-decoration-color.png" class="plans__decoration-color" alt="">
-                                    <img src="./img/plans-decoration-1.svg" class="plans__decoration-1" alt="">
-                                    <img src="./img/plans-decoration-2.svg" class="plans__decoration-2" alt="">
-                                    <img src="./img/plans-decoration-3.svg" class="plans__decoration-3" alt="">
-                                    <img src="./img/plans-decoration-4.svg" class="plans__decoration-4" alt="">
+                                    <img src="" data-src="./img/plans-decoration.png" class="plans__decoration-dot lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-color.png" class="plans__decoration-color lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-1.svg" class="plans__decoration-1 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-2.svg" class="plans__decoration-2 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-3.svg" class="plans__decoration-3 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-4.svg" class="plans__decoration-4 lazy" alt="">
                                 </div>
                             </div>
                             <div class="plans__item plans__item--right">
@@ -131,12 +142,12 @@
                                     <p>Create customizable illustrations with attractive designs that are made visually through high creativity Create customizable illustrations with attractive designs that are made visually through high creativity</p>
                                 </div>
                                 <div class="plans__decoration">
-                                    <img src="./img/plans-decoration.png" class="plans__decoration-dot" alt="">
-                                    <img src="./img/plans-decoration-color.png" class="plans__decoration-color" alt="">
-                                    <img src="./img/plans-decoration-1.svg" class="plans__decoration-1" alt="">
-                                    <img src="./img/plans-decoration-2.svg" class="plans__decoration-2" alt="">
-                                    <img src="./img/plans-decoration-3.svg" class="plans__decoration-3" alt="">
-                                    <img src="./img/plans-decoration-4.svg" class="plans__decoration-4" alt="">
+                                    <img src="" data-src="./img/plans-decoration.png" class="plans__decoration-dot lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-color.png" class="plans__decoration-color lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-1.svg" class="plans__decoration-1 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-2.svg" class="plans__decoration-2 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-3.svg" class="plans__decoration-3 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-4.svg" class="plans__decoration-4 lazy" alt="">
                                 </div>
                             </div>
                             <div class="plans__item plans__item--left">
@@ -146,38 +157,46 @@
                                     <p>Create customizable illustrations with attractive designs that are made visually through high creativity Create customizable illustrations with attractive designs that are made visually through high creativity</p>
                                 </div>
                                 <div class="plans__decoration">
-                                    <img src="./img/plans-decoration.png" class="plans__decoration-dot" alt="">
-                                    <img src="./img/plans-decoration-color.png" class="plans__decoration-color" alt="">
-                                    <img src="./img/plans-decoration-1.svg" class="plans__decoration-1" alt="">
-                                    <img src="./img/plans-decoration-2.svg" class="plans__decoration-2" alt="">
-                                    <img src="./img/plans-decoration-3.svg" class="plans__decoration-3" alt="">
-                                    <img src="./img/plans-decoration-4.svg" class="plans__decoration-4" alt="">
+                                    <img src="" data-src="./img/plans-decoration.png" class="plans__decoration-dot lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-color.png" class="plans__decoration-color lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-1.svg" class="plans__decoration-1 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-2.svg" class="plans__decoration-2 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-3.svg" class="plans__decoration-3 lazy" alt="">
+                                    <img src="" data-src="./img/plans-decoration-4.svg" class="plans__decoration-4 lazy" alt="">
                                 </div>
                             </div>
+                            <div class="plans__item plans__item--text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since.Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since.</p>
+                            </div>
+                            <div class="plans__line"></div>
                         </div>
                     </div>
                 </section>
-                <div class="b-planet">
-                    <div class="planet__video">
-                        <video autoplay muted loop>
-                            <source src="./img/bg-center.mp4" type="video/mp4">
-                        </video>
+                <section>
+                    <div class="b-planet js-planet">
+                        <div class="planet__video">
+                            <video autoplay muted loop>
+                                <source src="./img/bg-center.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planet__content">
+                            <p class="planet__title">Become a part of global laser tag communities</p>
+                            <p><a href="#" class="b-button b-button--gradient">Зарегистрировать клуб</a></p>
+                        </div>
                     </div>
-                    <div class="planet__content">
-                        <p class="planet__title">Become a part of global laser tag communities</p>
-                        <p><a href="#" class="b-button b-button--gradient">Зарегистрировать клуб</a></p>
-                    </div>
-                </div>
+                </section>
                 <section id="contacts">
-                    <div class="b-contacts">
-                        <h2>Бесплатно поможем с любым вопросом</h2>
-                        <p>Наша команда менеджеров пожет Вам с любым вопросом о сервисе или о лазертаге </p>
+                    <div class="b-contacts js-contacts">
+                        <div class="contacts__text">
+                            <h2><span>Бесплатно поможем с любым вопросом</span></h2>
+                            <p><span>Наша команда менеджеров пожет Вам с любым вопросом о сервисе или о лазертаге</span></p>
+                        </div>
                         <div class="contacts__items">
                             <div class="contacts__item">
                                 <pictire class="contacts__pic">
-                                    <source srcset="./img/contacts-pic-1.webp" type="image/webp">
-                                    <source srcset="./img/contacts-pic-1.png" type="image/png">
-                                    <img src="./img/contacts-pic-1.png" alt="">
+                                    <source srcset="./img/lazy-220-220.png" data-srcset="./img/contacts-pic-1.webp" type="image/webp">
+                                    <source srcset="./img/lazy-220-220.png" data-srcset="./img/contacts-pic-1.png" type="image/png">
+                                    <img class="lazy" src="./img/lazy-220-220.png" data-src="./img/contacts-pic-1.png" alt="">
                                 </pictire>
                                 <div class="contacts__title">
                                     <span>Сергей Михайлов</span> Менеджер по работе с иностранными клиентами
@@ -191,9 +210,9 @@
                             </div>
                             <div class="contacts__item">
                                 <pictire class="contacts__pic">
-                                    <source srcset="./img/contacts-pic-2.webp" type="image/webp">
-                                    <source srcset="./img/contacts-pic-2.png" type="image/png">
-                                    <img src="./img/contacts-pic-2.png" alt="">
+                                    <source srcset="./img/lazy-220-220.png" data-srcset="./img/contacts-pic-2.webp" type="image/webp">
+                                    <source srcset="./img/lazy-220-220.png" data-srcset="./img/contacts-pic-2.png" type="image/png">
+                                    <img class="lazy" src="./img/lazy-220-220.png" data-src="./img/contacts-pic-2.png" alt="">
                                 </pictire>
                                 <div class="contacts__title">
                                     <span>Ольга Лисовская</span> Менеджер по работе с иностранными клиентами
@@ -207,9 +226,9 @@
                             </div>
                             <div class="contacts__item">
                                 <pictire class="contacts__pic">
-                                    <source srcset="./img/contacts-pic-3.webp" type="image/webp">
-                                    <source srcset="./img/contacts-pic-3.png" type="image/png">
-                                    <img src="./img/contacts-pic-3.png" alt="">
+                                    <source srcset="./img/lazy-220-220.png" data-srcset="./img/contacts-pic-3.webp" type="image/webp">
+                                    <source srcset="./img/lazy-220-220.png" data-srcset="./img/contacts-pic-3.png" type="image/png">
+                                    <img class="lazy" src="./img/lazy-220-220.png" data-src="./img/contacts-pic-3.png" alt="">
                                 </pictire>
                                 <div class="contacts__title">
                                     <span>Вадим Здановский</span> Технический специалист
@@ -223,12 +242,13 @@
                             </div>
                             <div class="contacts__item">
                                 <pictire class="contacts__pic">
-                                    <source srcset="./img/contacts-pic-4.webp" type="image/webp">
-                                    <source srcset="./img/contacts-pic-4.png" type="image/png">
-                                    <img src="./img/contacts-pic-4.png" alt="">
+                                    <source srcset="./img/lazy-220-220.png" data-srcset="./img/contacts-pic-4.webp" type="image/webp">
+                                    <source srcset="./img/lazy-220-220.png" data-srcset="./img/contacts-pic-4.png" type="image/png">
+                                    <img class="lazy" src="./img/lazy-220-220.png" data-src="./img/contacts-pic-4.png" alt="">
                                 </pictire>
                                 <div class="contacts__title">
-                                    <span>Алексей Терещенков</span> Коммерческий директор</div>
+                                    <span>Алексей Терещенков</span> Коммерческий директор
+                                </div>
                                 <div class="contacts__contact">
                                     <span>Email:</span> <a href="mailto:info@laserwar.ru">info@laserwar.ru</a>
                                 </div>
