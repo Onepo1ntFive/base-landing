@@ -68,7 +68,7 @@ const styles = () => {
     return gulp
         .src(path.src.style)
         .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest(path.build.style))
         .pipe(reload({ stream: true }));
@@ -96,14 +96,14 @@ const fonts = () => {
 
 const imagesWebp = () => {
     return gulp
-        .src(path.src.img, {allowEmpty: true})
+        .src(path.src.img, { allowEmpty: true })
         .pipe(webp({ quality: 80, preset: 'photo' }))
         .pipe(gulp.dest(path.build.img))
 }
 
 const imagesDev = () => {
     return gulp
-        .src(path.src.img, {allowEmpty: true})
+        .src(path.src.img, { allowEmpty: true })
         .pipe(gulp.dest(path.build.img))
 }
 
@@ -126,7 +126,11 @@ exports.dev = series(
 // deploy
 const deploy = () => {
     return gulp.src('./build/**/*')
-    .pipe(ghPages());
+        .pipe(ghPages());
 }
 
-exports.deploy = series(deploy);
+exports.deploy = series(
+    cleanBuild,
+    parallel(html, styles, scripts, fonts, imagesDev, imagesWebp),
+    parallel(deploy)
+);
