@@ -9,7 +9,7 @@
             start: "-50% center",
             end: "bottom center",
             scrub: false,
-            markers: true,
+            markers: false,
             id: 'tl_gsap_video',
             toggleActions: "play none none reverse",
         }
@@ -38,7 +38,7 @@
             start: "top center",
             end: "bottom center",
             scrub: false,
-            markers: true,
+            markers: false,
             id: 'tl_gsap_steps',
             toggleActions: "play none none reverse",
         }
@@ -73,7 +73,7 @@
             start: "-25% center",
             end: "75% center",
             scrub: true,
-            markers: true,
+            markers: false,
             id: 'tl_gsap_notebook',
             toggleActions: "play none none reverse",
         }
@@ -96,7 +96,7 @@
             start: "top center",
             end: "bottom center",
             scrub: false,
-            markers: true,
+            markers: false,
             id: 'tl_gsap_plans',
             toggleActions: "play none none reverse",
         }
@@ -131,7 +131,7 @@
             start: "top center",
             end: "bottom center",
             scrub: false,
-            markers: true,
+            markers: false,
             id: 'tl_gsap_planet',
             toggleActions: "play none none reverse",
         }
@@ -151,7 +151,7 @@
             start: "top center",
             end: "bottom center",
             scrub: false,
-            markers: true,
+            markers: false,
             id: 'tl_gsap_contacts',
             toggleActions: "play none none reverse",
         }
