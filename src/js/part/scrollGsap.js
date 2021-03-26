@@ -6,7 +6,7 @@
     let tl_gsap_video = gsap.timeline({
         scrollTrigger: {
             trigger: document.querySelector('.js-video-desc'),
-            start: "-25% center",
+            start: "-100% center",
             end: "bottom center",
             scrub: false,
             markers: false,
@@ -35,7 +35,7 @@
     let tl_gsap_steps = gsap.timeline({
         scrollTrigger: {
             trigger: document.querySelector('.js-steps'),
-            start: "top center",
+            start: "-20% center",
             end: "bottom center",
             scrub: false,
             markers: false,
@@ -49,21 +49,21 @@
             opacity: 0,
         }, {
             opacity: 1,
-            duration: 3
+            duration: 2
         }, 'tl_gsap_steps')
         .fromTo(document.querySelector('.js-steps .steps__top-title h2'), {
             y: 100
         }, {
             y: 0,
-            delay: 0.5,
-            duration: 1.5
+            delay: 0.3,
+            duration: 1.25
         }, 'tl_gsap_steps')
         .fromTo(document.querySelector('.js-steps .steps__top-text p'), {
             y: 100
         }, {
             y: 0,
-            delay: 0.75,
-            duration: 1.5
+            delay: 0.5,
+            duration: 1.25
         }, 'tl_gsap_steps')
 
     // tl_gsap_notebook
@@ -142,6 +142,14 @@
             opacity: 0,
         }, {
             opacity: 1,
+        }, 'tl_gsap_planet')
+        .fromTo(document.querySelector('.js-planet-text .planet-text__inner'), {
+            opacity: 0,
+            y: 100,
+        }, {
+            opacity: 1,
+            y: 0,
+            delay: 1,
         }, 'tl_gsap_planet')
 
     // tl_gsap_contacts
